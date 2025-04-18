@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rowdies", sans-serif;
+}
+body {
+    background-color: rgb(21, 20, 20);
+    cursor: pointer;
+}
+.img {
+    background-image: linear-gradient(rgba(56, 53, 53, 0.7),rgba(51, 49, 49, 0.7)), url(https://news.dupontregistry.com/wp-content/uploads/2023/01/05-BUGATTI_Jean_LaVoitureNoire.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1513px;
+    height: 840px;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    box-shadow: 1px 10px 40px rgb(180, 6, 6);
+}
+header {
+    height: auto;
+    background-color: #000000;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    box-shadow: 1px 10px 40px rgb(180, 6, 6);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 2px 10px;
+}
+header nav{
+    
+    margin-left: 580px;
+}
+nav li   {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 15px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(180, 6, 6);
+}
+.btn {
+    width: 130px;
+    height: 40px;
+    border: 3px solid rgb(180, 6, 6);
+    border-radius: 15px;
+    box-shadow: 1px 10px 40px rgb(180, 6, 6);
+    background-color: black;
+    color: rgb(180, 6, 6);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.btn:hover {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(180, 6, 6);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn:active {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    scale: 0.84;
+}
+.logo a {
+    margin-left: 70px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 4px 5px rgb(255, 255, 255), -2px -4px 5px rgb(255, 255, 255);
+}
+
+.logo::first-letter {
+    font-size: 40px;
+    color: red;
+}
+.drop li {
+    display: block;
+    background-color: red;
+}
+.drop {
+    position: absolute;
+    display: none;
+}
+._drop:hover .drop {
+    display: block;
+}
+.drop li:hover {
+    background-color: rgb(64, 6, 6);
+    color: rgb(0, 0, 0);
+}
+li a::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    border-radius: 10px;
+    background-color: red;
+    margin: auto;
+    display: block;
+}
+li a:hover::after {
+    width: 100%;
+    transition: width 0.1s linear;
+}
+nav a:hover {
+    color: rgb(88, 12, 12);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+section {
+    background-color: transparent;
+    text-align: center;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.p {
+    color: red;
+    font-size: 140px;
+}
+.btn1 {
+    width: 300px;
+    height: 70px;
+    border: 3px solid rgb(180, 6, 6);
+    border-radius: 7px;
+    box-shadow: 1px 10px 40px rgb(180, 6, 6);
+    background-color: black;
+    color: rgb(180, 6, 6);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.btn1:hover {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(180, 6, 6);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn1:active {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    scale: 0.98;
+}
+.btn_section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.container_main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(3, 600px);
+    gap: 30px;
+}
+.fame {
+    color: red;
+    font-size: 50px;
+}
+.lux {
+    color: rgb(255, 0, 0);
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+}

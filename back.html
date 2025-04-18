@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+         margin-left: 200px;
+         margin-top: 50px;
+        }
+        .img-box {
+            width: 300px;
+            height: 250px;
+            margin-bottom: 10px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+        #click {
+            width: 300px;
+            height: 250px;
+        }
+        .big-img {
+            width: 900px;
+            height: 775px;
+            border: 2px solid rgb(0, 0, 0);
+            position: absolute;
+            left: 530px;
+            top: 51px;
+        }
+        #big {
+            width: 900px;
+            height: 775px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-box">
+            <img src="https://i.namu.wiki/i/j4LzRqrbK7V4y81OdCaIVUs9d94aX5fFemXvnPTex-oNT9pvM6_2MtkeJ6Y75gB7lqtJnx6oZnkmohiI1volxQ.webp" id="click" onclick="changeImg1()">
+        </div>
+        <div class="img-box">
+            <img src="https://preview.redd.it/do-you-guys-think-nagumo-has-a-hidden-agenda-v0-jhg4mo55zu1b1.png?width=640&crop=smart&auto=webp&s=eaa659565ea644ef94367edd001b25111b06cdc3" id="click" onclick="changeImg2()">
+        </div>
+        <div class="img-box">
+            <img src="https://preview.redd.it/osaragi-from-sakamoto-days-v0-l7xlu2f32m4d1.png?width=640&crop=smart&auto=webp&s=4b86aa27e4f285e8f8d6f6c438d72e869c3f30ad" id="click" onclick="changeImg3()">
+        </div>
+        <div class="big-img">
+            <img src="https://i.namu.wiki/i/j4LzRqrbK7V4y81OdCaIVUs9d94aX5fFemXvnPTex-oNT9pvM6_2MtkeJ6Y75gB7lqtJnx6oZnkmohiI1volxQ.webp" id="big" >
+        </div>
+    </div>
+    <script>
+        function changeImg1() {
+            document.getElementById('big').src="https://i.namu.wiki/i/j4LzRqrbK7V4y81OdCaIVUs9d94aX5fFemXvnPTex-oNT9pvM6_2MtkeJ6Y75gB7lqtJnx6oZnkmohiI1volxQ.webp";
+        }
+        function changeImg2() {
+            document.getElementById('big').src="https://preview.redd.it/do-you-guys-think-nagumo-has-a-hidden-agenda-v0-jhg4mo55zu1b1.png?width=640&crop=smart&auto=webp&s=eaa659565ea644ef94367edd001b25111b06cdc3";
+        }
+        function changeImg3() {
+            document.getElementById('big').src="https://preview.redd.it/osaragi-from-sakamoto-days-v0-l7xlu2f32m4d1.png?width=640&crop=smart&auto=webp&s=4b86aa27e4f285e8f8d6f6c438d72e869c3f30ad";
+        }
+    </script>
+
+</body>
+</html>

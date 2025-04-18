@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Elementary : <input type="text" id="input1">
+    Award : <input type="text" id="input2">
+    Year : <input type="text" id="input3">
+        <br>
+    <button type="button" id="gt1" onclick="myB1()">Elementary</button><h4 id="give1"></h4>
+    <br>
+    
+    <script>
+        function myB1() {
+
+        let a = document.getElementById('input1').value;
+        
+        let b = document.getElementById('input2').value;
+
+        let c = document.getElementById('input3').value;
+
+        document.getElementById('give1').innerHTML = a + " " + b + " " + c;
+        }
+    </script>
+</body>
+</html>
